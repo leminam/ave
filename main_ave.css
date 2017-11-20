@@ -1,0 +1,117 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.header {
+  font-family: 'Montserrat', sans-serif;
+}
+.header__top {
+  background-color: #333333;
+  color: #999999;
+  font-weight: 600;
+  font-size: 13px;
+    left: 0px;
+    top: 0px;
+  line-height: 45px;
+}
+.header__top-wrapper {
+  margin: 0 440px 0 440px;
+}
+.header__top-money {
+  display: inline-block;
+}
+.header__top-union {
+  float: right;
+}
+.header__top-reg {
+  display: inline-block;
+  text-align: left;
+  width: 90px;
+}
+.header__top-sign {
+  display: inline-block;
+  text-align: left;
+  width: 125px;
+}
+.header__top-cart {
+  background-color: #00c8c8;
+  color: #ffffff;
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  cursor: pointer;
+}
+.header__top-link {
+  color: #999999;
+  text-decoration: none;
+}
+.header__top-link_cart {
+  color: white;
+}
+.header__top-empty {
+  padding: 0 25px 0 25px;
+}
+.header__top-img {
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+.menu {
+  background-color: #f8f8f8;
+  height: 920px;
+}
+.menu__wrapper {
+  margin: 0 135px 0 135px;
+  line-height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu__logo-text {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu__logo-text_bold {
+  font-weight: 700;
+}
+.menu__nav {
+  text-transform: uppercase;
+  color: #222222;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+  margin-right: 115px;
+}
+.menu__nav-list {
+  margin-left: 60px;
+}
+input[type="text"] {
+  background-color: #f8f8f8;
+  width: 190px;
+  height: 28px;
+  border: 1px solid #e7e7e7;
+  color: #989898;
+  box-sizing: padding-box;
+}
+input[type="text"]::-webkit-input-placeholder {
+  padding: 0 10px 0 10px;
+}
+input[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.menu__search-img {
+  position: fixed;
+  top: 88px;
+  right: 145px;
+}
