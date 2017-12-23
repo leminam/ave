@@ -164,6 +164,16 @@ input[type="text"]:focus {
   float: right;
   width: 41%;
 }
+.menu__submenu-link {
+text-decoration: none;
+  color: #727272;
+}
+.menu__submenu-link:focus {
+  color: #00c8c8;
+}
+.menu__submenu-link:hover {
+  color: #00c8c8;
+}
 .menu__submenu-item {
   display: block;
   color: #727272;
@@ -226,4 +236,55 @@ input[type="text"]:focus {
   display: inline-block;
   letter-spacing: 1.4px;
   padding: 19px 0 0 48px;
+}
+.collection {
+  margin: 63px 137px 63px 137px;
+  border-top: 1.5px solid #eeeeee;
+  border-bottom: 1.5px solid #eeeeee;
+  padding-bottom: 46px;
+  font-family: 'Montserrat', sans-serif;
+}
+.collection__menu {
+  color: #727272;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  padding: 48px 0 48px 0;
+}
+.collection__menu-list {
+  padding-right: 55px;
+}
+.collection__menu-link {
+  text-decoration: none;
+  color: #727272;
+}
+.collection__menu-link:focus {
+  color: #00c8c8;
+}
+.collection__menu-link:hover {
+  color: #00c8c8;
+}
+.collection__lookbook {
+  display: flex;
+  justify-content: space-between;
+}
+.collection__lookbook-column1 {
+  width: 870px;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.collection__lookbook-column2 {
+  width: 870px;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  float: right;
+  justify-content: space-between;
+}
+.collection__lookbook-item {
+  padding: 13px 0 13px 0;
 }
