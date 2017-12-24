@@ -67,7 +67,7 @@ time, mark, audio, video, span {
 }
 .menu {
   background-color: #f8f8f8;
-  background-image: url(man-header.png);
+  background-image: url(img/man-header.png);
   background-repeat: no-repeat;
   background-position: 20% 0;
   height: 920px;
@@ -275,6 +275,7 @@ text-decoration: none;
   display: flex;
   align-items: flex-start;
   flex-flow: row wrap;
+  float: right;
   justify-content: space-between;
 }
 .collection__lookbook-column2 {
@@ -287,4 +288,22 @@ text-decoration: none;
 }
 .collection__lookbook-item {
   padding: 13px 0 13px 0;
+  position: relative;
+  display: inline-block;
+}
+.collection__lookbook-price {
+  color: #9a9a9a;
+  font-size: 21px;
+  font-weight: 400;
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  display: inline-block;
+}
+.collection__lookbook-price_sup {
+  font-size: 13px;
+  vertical-align: top;
+}
+.collection__lookbook-price_line {
+  text-decoration: line-through;
 }
