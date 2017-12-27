@@ -296,14 +296,21 @@ text-decoration: none;
   font-size: 21px;
   font-weight: 400;
   position: absolute;
-  top: 24px;
-  left: 16px;
+  top: 22px;
+  left: 20px;
   display: inline-block;
 }
 .collection__lookbook-price_sup {
   font-size: 13px;
   vertical-align: top;
+  left: 10px;
 }
 .collection__lookbook-price_line {
   text-decoration: line-through;
+}
+.collection__lookbook-price_better {
+  left: 75px;
+}
+.collection__lookbook-price_sign {
+  left: 65px;
 }
