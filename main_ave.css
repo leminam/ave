@@ -8,8 +8,8 @@ time, mark, audio, video, span {
   vertical-align: baseline;
 }
 .l-layout {
-    margin: 0 auto;
-    min-width: 2050px;
+  margin: 0 auto;
+  min-width: 2050px;
 }
 .header {
   font-family: 'Montserrat', sans-serif;
@@ -45,7 +45,7 @@ time, mark, audio, video, span {
 .header__top-cart {
   background-color: #00c8c8;
   color: #ffffff;
-  width: 150px;
+  width: 147px;
   display: inline-block;
   text-align: right;
   cursor: pointer;
@@ -121,13 +121,11 @@ time, mark, audio, video, span {
 }
 input[type="text"] {
   background-color: #f8f8f8;
-  width: 190px;
+  width: 170px;
   height: 28px;
   border: 1px solid #e7e7e7;
   color: #989898;
   box-sizing: padding-box;
-}
-input[type="text"]::-webkit-input-placeholder {
   padding: 0 10px 0 10px;
 }
 input[type="text"]:focus::-webkit-input-placeholder {
@@ -286,17 +284,12 @@ text-decoration: none;
   float: right;
   justify-content: space-between;
 }
-.collection__lookbook-item {
-  padding: 13px 0 13px 0;
-  position: relative;
-  display: inline-block;
-}
 .collection__lookbook-price {
   color: #9a9a9a;
   font-size: 21px;
   font-weight: 400;
   position: absolute;
-  top: 22px;
+  top: 10px;
   left: 20px;
   display: inline-block;
 }
@@ -313,4 +306,65 @@ text-decoration: none;
 }
 .collection__lookbook-price_sign {
   left: 65px;
+}
+.collection__lookbook-item {
+  margin: 13px 0 13px 0;
+  position: relative;
+}
+.collection__lookbook-item:hover .collection__lookbook-description {
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+  display: block;
+  position: absolute;
+  z-index: 3;
+}
+.collection__lookbook-item:hover {
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+}
+.collection__lookbook-description {
+  display: none;
+  height: 150px;
+  background-color: white;
+  bottom: -147px;
+  width: 100%;
+  color: #9a9a9a;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 11% 0 11%;
+}
+.collection__lookbook-title {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 50px;
+}
+.collection__lookbook-info {
+  display: inline-block;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.collection__lookbook-icons {
+  padding-top: 15px;
+}
+.collection__lookbook-button {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #727272;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.collection__lookbook-button_cart {
+  background-image: url(img/cart.png);
+}
+.collection__lookbook-button_wishlist {
+  background-image: url(img/wishlist.png);
+}
+.collection__lookbook-button_compare {
+  background-image: url(img/compare.png);
+}
+.collection__lookbook-button:hover {
+  background-color: #00c8c8;
 }
