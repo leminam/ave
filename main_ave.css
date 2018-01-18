@@ -76,7 +76,6 @@ time, mark, audio, video, span {
 .menu__top {
   line-height: 92px;
   display: flex;
-  align-items: flex-end;
   margin: 0 auto;
   width: 1785px;
 }
@@ -88,6 +87,7 @@ time, mark, audio, video, span {
 }
 .menu__logo {
   flex: 1 1 245px;
+  justify-content: flex-end;
 }
 .menu__logo-text_bold {
   font-weight: 700;
@@ -141,7 +141,7 @@ input[type="text"]:focus {
 }
 .menu__search-img {
   position: relative;
-  top: 6px;
+  top: 5px;
   right: 25px;
 }
 .menu__submenu {
