@@ -6,40 +6,48 @@
 <link href="main_ave.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://github.com/FortAwesome/Font-Awesome/blob/master/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 <div class="l-layout">
  <div class="header">
     <div class="header__top">
-      <div class="header__top-wrapper">
-        <div class="header__top-money"><a class="header__top-link" href="index.html">Currency : GBP &nbsp;</a></div>
-         <div class="header__top-union">
-          <div class="header__top-reg">
-           <a class="header__top-link" href="index.html">Register</a>
+      <div class="header__top-options">
+        <div class="header__top-currency">
+          <a class="header__top-link" href="index.html"><span class="header__top-text">Currency : GBP</span></a>
+        </div> 
+        <div class="header__top-wrapper">
+          <div class="header__top-actions">
+            <a class="header__top-link" href="index.html">Register</a>
           </div>
-         <div class="header__top-sign">
-          <a class="header__top-link" href="index.html">Sign in</a>
+          <div class="header__top-actions">
+            <a class="header__top-link" href="index.html">Sign in</a>
          </div>
          <div class="header__top-cart">
-          <a class="header__top-link header__top-link_cart" href="index.html"><img class="header__top-img" src="img/icons/cart.png"><span class="header__top-empty">empty &nbsp;</span></a>
+           <a class="header__top-link header__top-link_cart" href="index.html">
+             <img class="header__top-img" src="img/icons/cart.png"><span class="header__top-empty">empty</span>
+          </a>
          </div>
-       </div>
+        </div>
       </div>
     </div>
     <div class="menu">
      <div class="menu__top">
-       <div class="menu__logo"><span class="menu__logo-text menu__logo-text_bold">Avenue</span> <span class="menu__logo-text">Fashion</span>
+       <div class="menu__logo">
+         <span class="menu__logo-text menu__logo-text_bold">Avenue</span> <span class="menu__logo-text">Fashion</span>
        </div>
-       <div class="menu__nav">
-        <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Mens</a></div>
-        <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Womens</a></div>
-        <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">The Brand</a></div>
-        <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Local stores</a></div>
-        <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Look book</a></div>
-       </div>
-       <div class="menu__search">
-        <input type="text" placeholder="Search..">
-          <img class="menu__search-img" src="img/icons/search.png">
+       <div class="menu__nav-wrapper">
+         <div class="menu__nav">
+           <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Mens</a></div>
+           <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Womens</a></div>
+           <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">The Brand</a></div>
+           <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Local stores</a></div>
+           <div class="menu__nav-list"><a href="index.html" class="menu__nav-link">Look book</a></div>
+         </div>
+         <div class="menu__search">
+           <input type="text" placeholder="Search..">
+           <button class="menu__search-button" type="submit"></button>
+         </div>
        </div>
      </div>
       <div class="menu__submenu">
@@ -65,14 +73,12 @@
             <span class="menu__submenu-sale">Autumn sale!</span><span class="menu__submenu-sale">up to 50% off</span>
         </div>
       </div>
+      <div class="menu__letter">
+        <span class="menu__letter-name">A V E</span>
+      </div>
       <div class="menu__mens-wrapper">
         <a class="menu__mens-link" href="index.html"><div class="menu__mens"><span class="menu__mens-text">Shop men's collection</span></div></a>
       </div> 
-      <div class="menu__letter">
-        <span class="menu__letter-item">A</span>
-        <span class="menu__letter-item">v</span>
-        <span class="menu__letter-item">e</span>
-      </div>
   </div>
  </div>
  <div class="collection">
@@ -95,8 +101,10 @@
                   <a class="collection__lookbook-link" href="index.html"><span class="collection__lookbook-button collection__lookbook-button_compare"></span></a>
                 </div>
             </div>
-            <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price">89.99</span>
-              <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook1.png"></a>
+            <div class="collection__lookbook-cost">
+              <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price">89.99</span>
+            </div>  
+            <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook1.png"></a>
           </div>
           <div class="collection__lookbook-item">
             <div class="collection__lookbook-description">
@@ -108,8 +116,10 @@
                   <a class="collection__lookbook-link" href="index.html"><span class="collection__lookbook-button collection__lookbook-button_compare"></span></a>
                 </div>
             </div>
+            <div class="collection__lookbook-cost">
               <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price">47.50</span>
-                <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook2.png"></a>
+            </div>
+            <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook2.png"></a>
           </div>
           <div class="collection__lookbook-item">
             <div class="collection__lookbook-description">
@@ -121,8 +131,10 @@
                   <a class="collection__lookbook-link" href="index.html"><span class="collection__lookbook-button collection__lookbook-button_compare"></span></a>
                 </div>
             </div>
+            <div class="collection__lookbook-cost">
               <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price">69.95</span>
-                <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook4.png"></a>
+            </div>
+            <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook4.png"></a>
           </div>
         </div>
         <div class="collection__lookbook-column2">
@@ -136,9 +148,11 @@
                   <a class="collection__lookbook-link" href="index.html"><span class="collection__lookbook-button collection__lookbook-button_compare"></span></a>
                 </div>
             </div>
-              <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price collection__lookbook-price_line">107</span>
-                <span class="collection__lookbook-price collection__lookbook-price_sup collection__lookbook-price_sign">£</span><span class="collection__lookbook-price collection__lookbook-price_better">89.99</span>
-                  <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook3.png"></a>
+            <div class="collection__lookbook-cost">
+              <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price collection__lookbook-price_discount">107</span>
+              <span class="collection__lookbook-price collection__lookbook-price_sup">&nbsp;£</span><span class="collection__lookbook-price">89.99</span>
+            </div>
+            <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook3.png"></a>
           </div>
           <div class="collection__lookbook-item">
             <div class="collection__lookbook-description">
@@ -150,8 +164,10 @@
                   <a class="collection__lookbook-link" href="index.html"><span class="collection__lookbook-button collection__lookbook-button_compare"></span></a>
                 </div>
             </div>
+            <div class="collection__lookbook-cost">
               <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price">29.95</span>
-                <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook5.png"></a>
+            </div>
+            <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook5.png"></a>
           </div>
           <div class="collection__lookbook-item">
             <div class="collection__lookbook-description">
@@ -163,39 +179,38 @@
                   <a class="collection__lookbook-link" href="index.html"><span class="collection__lookbook-button collection__lookbook-button_compare"></span></a>
                 </div>
             </div>
+            <div class="collection__lookbook-cost">
               <span class="collection__lookbook-price collection__lookbook-price_sup">£</span><span class="collection__lookbook-price">34.79</span>
-                <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook6.png"></a>
+            </div>
+            <a class="collection__lookbook-link" href="index.html"><img class="collection__lookbook-img" src="img/lookbook6.png"></a>
           </div>
         </div>
      </div>
  </div>
   <div class="lookbook">
-    <div class="lookbook__item lookbook__item_mens">
-      <div class="lookbook__item-wrapper">
-        <span class="lookbook__item-title lookbook__item-title_bold">men’s</span><span class="lookbook__item-title">lookbook</span>
-      </div>
-      <div class="lookbook__item-wrapper">
-        <span class="lookbook__item-description">Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</span>
-      </div>
-      <a class="lookbook__item-link" href="index.html"><div class="lookbook__item-botton">view now</div></a>
+    <div class="lookbook__item">
+      <img class="lookbook__item-img" src="img/mens-lookbook.png">
+        <div class="lookbook__item-text">
+          <div class="lookbook__item-wrapper">
+            <span class="lookbook__item-title lookbook__item-title_bold">men’s</span><span class="lookbook__item-title">lookbook</span>
+          </div>
+          <div class="lookbook__item-wrapper">
+            <span class="lookbook__item-description">Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</span>
+          </div>
+          <a class="lookbook__item-link" href="index.html"><div class="lookbook__item-botton">view now</div></a>
+        </div>
     </div>
-    <div class="lookbook__item lookbook__item_womens">
-      <div class="lookbook__item-wrapper">
-        <span class="lookbook__item-title lookbook__item-title_bold">women’s</span><span class="lookbook__item-title">lookbook</span>
-      </div>
-      <div class="lookbook__item-wrapper">
-        <span class="lookbook__item-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</span>
-      </div>
-      <a class="lookbook__item-link" href="index.html"><div class="lookbook__item-botton">view now</div></a>      
-    </div>
-    <div class="lookbook__item lookbook__item_your">
-      <div class="lookbook__item-wrapper">
-        <span class="lookbook__item-title lookbook__item-title_bold">your</span><span class="lookbook__item-title">lookbook</span>
-      </div>
-      <div class="lookbook__item-wrapper">
-        <span class="lookbook__item-description">See an item you like and click the  button to add it to your lookbook where you can create your own perfect look. It’s like your own boutique!</span>
-      </div>
-      <a class="lookbook__item-link" href="index.html"><div class="lookbook__item-botton">view now</div></a>      
+    <div class="lookbook__item">
+      <img class="lookbook__item-img" src="img/womens-lookbook.png">
+        <div class="lookbook__item-text">
+          <div class="lookbook__item-wrapper">
+            <span class="lookbook__item-title lookbook__item-title_bold">women’s</span><span class="lookbook__item-title">lookbook</span>
+          </div>
+          <div class="lookbook__item-wrapper">
+            <span class="lookbook__item-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</span>
+          </div>
+          <a class="lookbook__item-link" href="index.html"><div class="lookbook__item-botton">view now</div></a>
+        </div>
     </div>
   </div>
   <div class="footer">
