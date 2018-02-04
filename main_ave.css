@@ -85,7 +85,7 @@ time, mark, audio, video, span {
   margin-bottom: 65px;
 }
 .menu__top {
-  line-height: 92px;
+  line-height: 99px;
   margin: 0 auto;
   width: 1650px;
 }
@@ -103,8 +103,8 @@ time, mark, audio, video, span {
   font-weight: 700;
 }
 .menu__nav-wrapper {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .menu__nav {
   text-transform: uppercase;
@@ -115,7 +115,6 @@ justify-content: flex-end;
 }
 .menu__nav-list {
   margin-right: 48px;
-  position: relative;
 }
 .menu__nav-list::before {
   content: "\f107";
@@ -123,23 +122,30 @@ justify-content: flex-end;
   color: #989898;
   position: relative;
   top: 20px;
-  left: 9px;
+  left: 10px;
   font-size: 14px;
 }
+.menu__nav-list_none::before {
+  color: #f8f8f8;
+}
 .menu__nav-list:hover .menu__submenu {
-  position: absolute;
   display: block;
-  z-index: 3;
 }
 .menu__nav-link {
   text-decoration: none;
   color: #222222;
 }
+.menu__nav-link:hover {
+  color: #00c8c8;
+}
+.menu__nav-link:active {
+  color: #00c8c8;
+}
 .menu__nav-link:focus {
   color: #00c8c8;
 }
-.menu__nav-link:hover {
-  color: #00c8c8;
+.menu__nav-link_active {
+  color: #00c8c8;  
 }
 .menu__search-button {
   position: relative;
@@ -175,10 +181,11 @@ input[type="text"]:focus {
   display: none;
   background-color: #f8f8f8;
   width: 467px;
-  height: 527px;
-  padding: 30px 30px 30px 30px;
+  height: 530px;
+  padding: 33px 30px 30px 30px;
   box-sizing: border-box;
   box-shadow: 0 6px 15px 4px rgba(0,0,0,0.1);
+  position: absolute;
 }
 .menu__submenu-first {
   width: 59%;
@@ -204,6 +211,7 @@ input[type="text"]:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-transform: none;
 }
 .menu__submenu-item_name {
   color: #575153;
@@ -221,12 +229,13 @@ input[type="text"]:focus {
   text-transform: uppercase;
   height: 200px;
   box-sizing: border-box;
-  margin-top: 57px;
   text-align: center;
-  padding-top: 54px;
+  padding-top: 48px;
+  margin-top: 24px;
 }
 .menu__submenu-sale {
-  display: inline-block;
+  display: block;
+  line-height: 50px;
 }
 .menu__letter {
   color: #575153;
@@ -292,6 +301,9 @@ input[type="text"]:focus {
 .collection__menu-link:hover {
   color: #00c8c8;
 }
+.collection__menu-link_active {
+  color: #00c8c8;
+}
 .collection__lookbook {
   display: flex;
   justify-content: space-between;
@@ -312,8 +324,32 @@ input[type="text"]:focus {
   float: right;
   justify-content: space-between;
 }
-.collection__lookbook-img {
+.collection__lookbook-clothes {
   width: 100%;
+}
+.collection__lookbook-resize {
+  width: 21%;
+  border: 1px solid white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.collection__lookbook-resize_low {
+  top: 130px;
+}
+.collection__lookbook-resize_small {
+  width: 15%;
+}
+.collection__lookbook-detail {
+  position: absolute;
+  top: 45%;
+  right: 50%;
+}
+.collection__lookbook-preview {
+  display: none;
+}
+.collection__lookbook-item:hover .collection__lookbook-preview {
+  display: block;
 }
 .collection__lookbook-cost {
   position: absolute;
@@ -439,20 +475,21 @@ input[type="text"]:focus {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  width: 180px;
-  height: 59px;
   box-sizing: border-box;
   border: 2px solid #737373;
   text-align: center;
-  line-height: 54px;
-  margin-left: auto;
-  margin-right: 0;
+  display: block;
   margin-top: 10px;
-  display: inline-block;
 }
 .lookbook__item-link {
   text-decoration: none;
   color: #454647;
+  width: 180px;
+  height: 59px;
+  line-height: 54px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 .lookbook__item-botton:hover {
   color: white;
@@ -502,6 +539,9 @@ input[type="text"]:focus {
 .footer__menu-link:hover {
   color: #00c8c8;
 }
+.footer__menu-link_active {
+  color: #00c8c8;
+}
 .footer__menu-contact {
   flex: 1.2;
 }
@@ -531,6 +571,7 @@ input[type="text"]:focus {
 .footer__info-box_social {
   background-color: #00c8c8;
   float: right;
+    padding-top: 81px;
 }
 .footer__info-text {
   display: block;
@@ -538,11 +579,9 @@ input[type="text"]:focus {
 .footer__info-text_bold {
   font-weight: 700;
 }
-.footer__info-box_social {
-  padding-top: 81px;
-}
-.footer__info-img {
-  padding: 0 22px 0 23px;
+.footer__info-icons {
+  margin: 0 22px 0 22px;
+  display: inline-block;
 }
 .copyright {
   height: 45px;
