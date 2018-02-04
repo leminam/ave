@@ -1,0 +1,145 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.local {
+  margin: 0 auto;
+  width: 1170px;
+  padding: 58px 0 123px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.local__cities {
+  display: flex;
+  justify-content: space-between;
+}
+.local__city {
+  width: 373px;
+}
+.local__city-text {
+  color: #8e8c8c;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+.local__city-text_subtitle {
+  color: #727272;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 0 15px 0;
+}
+.local__city-text_title {
+  color: #575153;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.local__city-button {
+  color: #454647;
+  width: 220px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1.5px solid #737373;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  line-height: 55px;
+  margin: 30px 0 50px 0;
+}
+.local__city-button:hover {
+  color: white;
+  background-color: #00c8c8;
+  border: 1.5px solid #00c8c8;
+}
+.local__contacts {
+  box-sizing: border-box;
+  width: 520px;
+  height: 530px;
+  background-color: #f8f8f8;
+  padding: 40px 35px 0 40px;
+}
+.local__location {
+  display: flex;
+}
+.local__contacts-info {
+  color: #8e8c8c;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  line-height: 30px;
+}
+.local__contacts-details {
+  margin: 20px 0 20px 0;
+}
+.local__contacts-info_map:before {
+  content: "\f041";
+  font-family: FontAwesome;
+  font-size: 18px;
+  padding-right: 8px;
+}
+.local__contacts-info_call:before {
+  content: "\f095";
+  font-family: FontAwesome;
+  font-size: 18px;
+  padding-right: 8px;
+}
+.local__contacts-info_site:before {
+  content: "\f0c1";
+  font-family: FontAwesome;
+  font-size: 18px;
+  padding-right: 8px;
+}
+.local__contacts-info_email:before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  font-size: 18px;
+  padding-right: 8px;
+}
+.local__contacts-info_mode:before {
+  content: "\f017";
+  font-family: FontAwesome;
+  font-size: 18px;
+  padding-right: 8px;
+}
+.local__contacts-link {
+  color: #8e8c8c;
+  text-decoration: none;
+}
+.local__contacts-link:focus {
+  color: #00c8c8;
+}
+.local__contacts-link:hover {
+  color: #00c8c8;
+}
+.local__contacts-icons {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  display: inline-block;
+  background-color: #727272;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.local__contacts-img {
+  height: 18px;
+  position: relative;
+  top: 6px;
+  left: 7px;
+}
+.local__contacts-social {
+  padding-top: 25px;
+}
+.local__contacts-icons:hover {
+  background-color: #00c8c8;
+}
