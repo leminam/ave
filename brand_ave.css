@@ -1,0 +1,95 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.intro {
+  height: 450px;
+  margin-top: 12px;
+  background-image: url(img/intro.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: 'Montserrat', sans-serif;
+}
+.intro__text {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 157px;
+}
+.intro__name {
+  font-size: 48px;
+  font-weight: 300;
+}
+.intro__name_bold {
+  font-weight: 700;
+}
+.intro__slogan {
+  display: block;
+  line-height: 104px;
+}
+.content__brand {
+  margin: 0 auto;
+  width: 1170px;
+  padding: 65px 0 123px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.content__brand-text {
+  color: #8e8c8c;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: block;
+}
+.content__brand-text_subtitle {
+  text-transform: uppercase;
+  color: #727272;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.content__brand-text_title {
+  text-transform: uppercase;
+  color: #575153;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 22px 0 22px 0;
+}
+.content__brand-column1 {
+  margin-right: 27px;
+}
+.content__brand-column2 {
+  padding-top: 35px;
+}
+.content__brand-img_middle {
+  margin-top: 57px;
+}
+.content__brand-img_awards {
+  margin-top: 28px;
+}
+.content__brand-link {
+  text-decoration: none;
+  color: #00c8c8;
+}
+.content__brand-link:focus {
+  color: #00c8c8;
+}
+.content__brand-link:hover {
+  color: #00c8c8;
+}
+.content__brand-link_arrow::after {
+  content: "\f178";
+  font-family: FontAwesome;
+  color: #00c8c8;
+  font-size: 15px;
+  padding-left: 2px;
+}
