@@ -8,12 +8,12 @@ time, mark, audio, video, span {
   vertical-align: baseline;
 }
 .local {
-  margin: 0 auto;
-  width: 1170px;
   padding: 58px 0 123px 0;
   font-family: 'Montserrat', sans-serif;
 }
 .local__cities {
+  margin: 0 auto;
+  width: 1170px;
   display: flex;
   justify-content: space-between;
 }
@@ -44,6 +44,7 @@ time, mark, audio, video, span {
 }
 .local__city-button {
   color: #454647;
+  font-size: 16px;
   width: 220px;
   height: 60px;
   box-sizing: border-box;
@@ -55,6 +56,7 @@ time, mark, audio, video, span {
   font-weight: 500;
   line-height: 55px;
   margin: 30px 0 50px 0;
+  background-color: white;
 }
 .local__city-button:hover {
   color: white;
@@ -63,13 +65,16 @@ time, mark, audio, video, span {
 }
 .local__contacts {
   box-sizing: border-box;
-  width: 520px;
+  width: 640px;
   height: 530px;
   background-color: #f8f8f8;
   padding: 40px 35px 0 40px;
 }
 .local__location {
   display: flex;
+  justify-content: center;
+  width: 1735px;
+  margin: 0 auto;
 }
 .local__contacts-info {
   color: #8e8c8c;
