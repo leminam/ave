@@ -152,7 +152,7 @@ time, mark, audio, video, span {
   top: 1px;
   right: 33px;
   cursor: pointer;
-  background-color: #f8f8f8;
+  background-color: white;
   border: none;
   outline: none;
 }
@@ -163,7 +163,7 @@ time, mark, audio, video, span {
   font-size: 14px;
 }
 input[type="text"] {
-  background-color: #f8f8f8;
+  background-color: white;
   width: 170px;
   height: 28px;
   border: 1px solid #e7e7e7;
@@ -419,6 +419,7 @@ input[type="text"]:focus {
   background-color: #727272;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 .collection__lookbook-button_cart {
   background-image: url(img/icons/cart.png);
@@ -492,6 +493,9 @@ input[type="text"]:focus {
   color: white;
   background-color: #00c8c8;
   border: 1.5px solid #00c8c8;
+}
+.lookbook__item-button:hover .lookbook__item-link {
+  color: white;
 }
 .lookbook__item-link {
   text-decoration: none;
