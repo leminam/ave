@@ -1,0 +1,106 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.collection__lookbook {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.collection__lookbook-detail {
+  position: absolute;
+  top: 60%;
+  right: 54%;
+}
+.collection__lookbook-detail_love {
+  right: 37%;
+}
+.collection__lookbook-price {
+  text-transform: uppercase;
+}
+.collection__lookbook-item {
+  height: 500px;
+  position: relative;
+}
+.collection__lookbook-text {
+  color: #8e8c8c;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: block;
+  padding: 10px 0 10px 0;
+  width: 300px;
+}
+.collection__lookbook-text_win {
+  width: 500px;
+}
+.collection__lookbook-title {
+  color: #575153;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline;
+  letter-spacing: 3px;
+}
+.collection__lookbook-title_subtitle {
+  color: #727272;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  letter-spacing: normal;
+  padding-top: 5px;
+}
+.collection__lookbook-title_bold {
+  font-weight: 700;
+}
+.collection__lookbook-star {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+.collection__lookbook-button {
+  color: #454647;
+  font-size: 16px;
+  width: 180px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1.5px solid #737373;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  line-height: 55px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #e6e7e9;
+  border-radius: 0 0 0 0;
+}
+.collection__lookbook-button:hover {
+  color: white;
+  background-color: #00c8c8;
+  border: 1.5px solid #00c8c8;
+}
+.collection__lookbook-button_win {
+  background-color: #efefed;
+}
+.collection__lookbook-win {
+  position: absolute;
+  bottom: 74px;
+  right: 10px;
+}
+.collection__lookbook-title_win {
+  color: #00c8c8;
+  font-size: 72px;
+  font-weight: 700;
+  display: block;
+  text-align: right;
+  line-height: 130px;
+}
+.collection__lookbook-title_huge {
+  font-size: 200px;
+}
