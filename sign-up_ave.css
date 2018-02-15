@@ -1,0 +1,138 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.enter {
+  margin: 0 auto;
+  width: 1170px;
+  padding: 65px 0 123px 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.enter__column {
+  text-align: left;
+  width: 585px;
+  padding: 0 35px 0 35px;
+  color: #989898;
+}
+.enter__column_border {
+  border-right: 1px solid #eeeeee;
+}
+.enter__title {
+  color: #575153;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.enter__column input[type="text"] {
+  width: 550px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0.5px solid #e7e7e7;
+  color: #989898;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: white;
+  padding: 0 10px 0 10px;
+  margin: 20px 0 15px 0;
+}
+.enter__column input[type="text"]:focus {
+  border: 0.5px solid #bb5465;
+  background-color: #fcf6f7;
+}
+.enter__column-button {
+  padding-top: 15px;
+  vertical-align: baseline;
+}
+.enter__button {
+  color: #454647;
+  font-size: 16px;
+  width: 150px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1.5px solid #737373;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  line-height: 55px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0 0 0 0;
+}
+.enter__button:hover {
+  color: white;
+  background-color: #00c8c8;
+  border: 1.5px solid #00c8c8;
+}
+.enter__text {
+  color: #8e8c8c;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+.enter__link {
+  text-decoration: none;
+}
+.enter__link_color {
+  color: #00c8c8;
+}
+.enter__link_color:after {
+  content: "\f178";
+  font-family: FontAwesome;
+  color: #00c8c8;
+  font-size: 15px;
+  padding-left: 2px;
+}
+.enter__text_register {
+  width: 40%;
+  padding-top: 13px;
+}
+.enter__button_register {
+  width: 265px;
+}
+.enter__text_sign {
+  line-height: 55px;
+}
+.enter__checkbox {
+  padding: 15px 0 20px 0;
+  color: #8e8c8c;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+.enter__checkbox-input {
+  display: none;
+}
+.enter__checkbox-button {
+  position: relative;     
+  width: 25px;            
+  height: 25px;           
+  border: 0.5px solid #e7e7e7;
+  border-radius: 0 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.enter__checkbox-input:checked + .enter__checkbox-button::before {
+  content: "";
+  display: block;
+  position: absolute;  
+  top: 6px;
+  right: 7px;
+  bottom: 7px;
+  left: 6px;
+  background: #e7e7e7;
+}
+.enter__checkbox-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+}
