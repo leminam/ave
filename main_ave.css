@@ -58,7 +58,13 @@ time, mark, audio, video, span {
   color: #999999;
   text-decoration: none;
 }
+.header__top-link:hover {
+  color: #00c8c8;
+}
 .header__top-link_cart {
+  color: white;
+}
+.header__top-link_cart:hover {
   color: white;
 }
 .header__top-empty {
@@ -170,9 +176,6 @@ input[type="text"] {
   color: #989898;
   padding: 0 10px 0 10px;
   margin-left: 70px;
-}
-input[type="text"]:focus::-webkit-input-placeholder {
-  color: transparent;
 }
 input[type="text"]:focus {
   outline: none;
