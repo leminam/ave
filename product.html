@@ -116,14 +116,10 @@
         <div class="product__info">
           <span class="product__info-name">Ave classic sweatshirt</span>
           <div class="product__info-rating">
-            <div class="product__info-stars">
-              <i class="fas fa-star product__info-star"></i>
-              <i class="fas fa-star product__info-star"></i>
-              <i class="fas fa-star product__info-star"></i>
-              <i class="fas fa-star product__info-star"></i>
-              <i class="fas fa-star product__info-star"></i>
-              <span class="product__info-review"><a class="product__info-link">3 Review(s)</a></span>
+            <div class="rating">
+              <span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span>
             </div>
+            <span class="product__info-review"><a class="product__info-link">3 Review(s)</a></span>
             <span class="product__info-review product__info-review_add"><a class="product__info-link">Add a Review</a></span>
             <div class="product__info-share">Share:
               <span class="product__info-social">
@@ -155,27 +151,37 @@
           <div class="product__info-description">
             <span class="product__info-text">Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</span>
             <ul class="product__info-list">
-              <li class="product__info-point">Elasticated cuffs</li>
-              <li class="product__info-point">Casual fit</li>
-              <li class="product__info-point">100% Cotton</li>
-              <li class="product__info-point">Free shipping with 4 days delivery</li>
+              <li class="product__info-item">Elasticated cuffs</li>
+              <li class="product__info-item">Casual fit</li>
+              <li class="product__info-item">100% Cotton</li>
+              <li class="product__info-item">Free shipping with 4 days delivery</li>
             </ul>
           </div>
           <div class="product__info-specific">
             <div class="product__info-option">
               <span class="product__info-title product__info-title_specific">Colour</span>
-              <button class="product__info-select"><span class="product__info-text product__info-text_button">Select Colour</span></button>
+              <select class="product__info-select product__info-select_form">
+                <option selected disabled>Select Color</option>
+                <option>White</option>
+                <option>Black</option>
+                <option>Gray</option>
+              </select>
             </div>
             <div class="product__info-option">
               <span class="product__info-title product__info-title_specific">Size</span>
-              <button class="product__info-select"><span class="product__info-text product__info-text_button product__info-text_size">Select Size</span></button>
+              <select class="product__info-select product__info-select_form">
+                <option selected disabled>Select Size</option>
+                <option>XS</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
             </div>
             <div class="product__info-option">
               <span class="product__info-title product__info-title_specific">qty</span>
-              <div class="product__info-qty">
+              <div class="product__info-quantity">
                 <input type="text" placeholder="">
-                <button class="product__info-select product__info-select_more" type="submit"></button>
-                <button class="product__info-select product__info-select_less" type="submit"></button>
+                <button class="product__info-select product__info-select_increment" type="submit"></button>
+                <button class="product__info-select product__info-select_decrement" type="submit"></button>
               </div>
             </div>
           </div>

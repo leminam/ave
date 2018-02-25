@@ -64,17 +64,25 @@ time, mark, audio, video, span {
 .product__info-rating {
   padding: 20px 0 20px 0;
 }
-.product__info-stars {
-  display: inline;
+.rating span.rating__star:before {
+  content: "\f005";
+  padding-right: 2px;
   color: #dfdfde;
 }
-.product__info-star {
-  font-size: 14px;
-  letter-spacing: -4px;
+.rating span.rating__star {
+  font-family: FontAwesome;
+  display: inline-block;
 }
-.product__info-star:hover {
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 17px;
+  display: inline-block;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\f005";
   color: #ded3aa;
-  cursor: pointer;
 }
 .product__info-review {
   color: #727272;
@@ -95,7 +103,7 @@ time, mark, audio, video, span {
   font-size: 15px;
 }
 .product__info-social_icons {
-  padding: 0 8px 0 8px;
+  padding: 0 7px 0 7px;
 }
 .product__info-social_icons:hover {
   color: #00c8c8;
@@ -118,14 +126,12 @@ time, mark, audio, video, span {
 .product__info-details {
   padding: 25px 0 25px 0;
 }
-.product__info-item {
-  line-height: 40px;
-}
 .product__info-title {
   color: #575153;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
+  line-height: 40px;
 }
 .product__info-title_details {
   color: #8c8c8c;
@@ -165,18 +171,15 @@ time, mark, audio, video, span {
   text-align: left;
   padding: 0 10px 0 10px;
   cursor: pointer;
-  border-radius: 0 0 0 0;
   outline: none;
 }
-.product__info-text_button:after {
-  content: "\f107";
-  font-family: FontAwesome;
-  color: #989898;
-  font-size: 14px;
-  padding-left: 63px;
-}
-.product__info-text_size:after {
-  padding-left: 76px;  
+.product__info-select_form {
+  background-image: url(img/icons/arrow.png);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  appearance: none;
+  -moz-appearance: none; 
+  -webkit-appearance: none;
 }
 .product__info-title_specific {
   display: block;
@@ -185,7 +188,7 @@ time, mark, audio, video, span {
 .product__info-option {
   margin-right: 20px;
 }
-.product__info-qty input[type="text"] {
+.product__info-quantity input[type="text"] {
   width: 72px;
   height: 36px;
   box-sizing: border-box;
@@ -197,7 +200,7 @@ time, mark, audio, video, span {
   padding: 0 10px 0 10px;
   margin: 0 0 0 0;
 }
-.product__info-select_more {
+.product__info-select_increment {
   width: 34px;
   height: 19px;
   text-align: center;
@@ -205,19 +208,19 @@ time, mark, audio, video, span {
   top: -9px;
   right: 38px;
 }
-.product__info-select_more:after {
+.product__info-select_increment:after {
   content: "\f106";
   font-family: FontAwesome;
   color: #989898;
   position: relative;
 }
-.product__info-select_less:after {
+.product__info-select_decrement:after {
   content: "\f107";
   font-family: FontAwesome;
   color: #989898;
   position: relative;
 }
-.product__info-select_less {
+.product__info-select_decrement {
   width: 34px;
   height: 19px;
   text-align: center;
@@ -241,7 +244,6 @@ time, mark, audio, video, span {
   border: 1.5px solid #454647;
   background-color: white;
   cursor: pointer;
-  border-radius: 0 0 0 0;
   outline: none;
 }
 .product__info-button:hover {

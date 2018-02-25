@@ -89,32 +89,32 @@ time, mark, audio, video, span {
 .local__contacts-info_map:before {
   content: "\f041";
   font-family: FontAwesome;
-  font-size: 18px;
-  padding-right: 8px;
+  font-size: 20px;
+  padding-right: 10px;
 }
 .local__contacts-info_call:before {
   content: "\f095";
   font-family: FontAwesome;
-  font-size: 18px;
-  padding-right: 8px;
+  font-size: 19px;
+  padding-right: 10px;
 }
 .local__contacts-info_site:before {
   content: "\f0c1";
   font-family: FontAwesome;
-  font-size: 18px;
-  padding-right: 8px;
+  font-size: 19px;
+  padding-right: 10px;
 }
 .local__contacts-info_email:before {
   content: "\f0e0";
   font-family: FontAwesome;
-  font-size: 18px;
-  padding-right: 8px;
+  font-size: 16px;
+  padding-right: 10px;
 }
 .local__contacts-info_mode:before {
   content: "\f017";
   font-family: FontAwesome;
-  font-size: 18px;
-  padding-right: 8px;
+  font-size: 20px;
+  padding-right: 10px;
 }
 .local__contacts-link {
   color: #8e8c8c;

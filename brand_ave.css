@@ -48,21 +48,23 @@ time, mark, audio, video, span {
   font-weight: 400;
   display: block;
 }
-.content__brand-text_subtitle {
+.content__brand-subtitle {
   text-transform: uppercase;
   color: #727272;
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   padding-bottom: 15px;
+  display: block;  
 }
-.content__brand-text_title {
+.content__brand-title {
   text-transform: uppercase;
   color: #575153;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   padding: 22px 0 22px 0;
+  display: block;  
 }
 .content__brand-column1 {
   margin-right: 27px;

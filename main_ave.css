@@ -137,18 +137,18 @@ time, mark, audio, video, span {
 .menu__nav-list:hover .menu__submenu {
   display: block;
 }
+.menu__nav-list:hover .menu__nav-link {
+  color: #00c8c8;
+}
+.menu__nav-list:hover::before {
+  color: #00c8c8;
+}
+.menu__nav-list_none:hover::before {
+  color: #f8f8f8;
+}
 .menu__nav-link {
   text-decoration: none;
   color: #222222;
-}
-.menu__nav-link:hover {
-  color: #00c8c8;
-}
-.menu__nav-link:active {
-  color: #00c8c8;
-}
-.menu__nav-link:focus {
-  color: #00c8c8;
 }
 .menu__nav-link_active {
   color: #00c8c8;  
