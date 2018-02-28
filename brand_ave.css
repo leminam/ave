@@ -66,14 +66,14 @@ time, mark, audio, video, span {
   padding: 22px 0 22px 0;
   display: block;  
 }
-.content__brand-column1 {
-  margin-right: 27px;
+.content__brand-column {
+  width: 570px;
 }
-.content__brand-column2 {
+.content__brand-clothing {
   padding-top: 35px;
 }
-.content__brand-img_middle {
-  margin-top: 57px;
+.content__brand-img_margin {
+  margin-top: 50px;
 }
 .content__brand-img_awards {
   margin-top: 28px;

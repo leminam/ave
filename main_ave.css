@@ -155,8 +155,7 @@ time, mark, audio, video, span {
 }
 .menu__search-button {
   position: relative;
-  top: 1px;
-  right: 33px;
+  right: 35px;
   cursor: pointer;
   background-color: white;
   border: none;
@@ -339,6 +338,10 @@ input[type="text"]:focus {
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
+}
+.collection__lookbook-resize:hover {
+  border: 1px solid #00c8c8;  
 }
 .collection__lookbook-resize_low {
   top: 130px;
@@ -349,7 +352,7 @@ input[type="text"]:focus {
 .collection__lookbook-detail {
   position: absolute;
   top: 45%;
-  right: 50%;
+  right: 45%;
 }
 .collection__lookbook-preview {
   display: none;
